@@ -13,7 +13,7 @@ window.TMW = {
   checkoutUrl: "https://whop.com/happyspousehappyhouse/the-magnetic-wife",
 
   /* Where Whop sends her after paying. */
-  returnUrl: "https://happyspousehappyhouse.love/thank-you?payment=success",
+  returnUrl: "https://happyspousehappyhouse.love/thank-you/?payment=success",
 
   /* Price used for Meta Pixel events (USD). */
   value: 55,
