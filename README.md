@@ -1,16 +1,18 @@
 # The Magnetic Wife: page code for GoHighLevel
 
-The sales page, thank-you page and policy pages live here. GoHighLevel shows them
-through a two-line loader, so a change pushed here goes live on the GHL page
-within about 10 minutes, without opening the GHL editor.
+The sales page, thank-you page and policy pages live here and are served by
+GitHub Pages at https://happyspousehappyhouse.love (see `docs/CNAME`).
+Payment and file delivery run on Whop; customer details are kept in GoHighLevel.
+A change pushed here goes live within about 10 minutes.
 
 ## How it fits together
 
 - `src/` holds the page sources: the letter (`index.src.html`), styles, the
   checkout script (`site.js`) and the settings (`config.js`).
 - `make_pages.py` builds them into `docs/`, one script per page.
-- `docs/` is published by GitHub Pages at
-  `https://slavacreatives-afk.github.io/Magnetic-Wife/`.
+- `docs/` is published by GitHub Pages on the custom domain: the full site
+  (`index.html`, `thank-you/`, `privacy/`, `terms/`, `refunds/`) plus one-script
+  versions of each page (`sales.js` etc.) for embedding in a GHL page if needed.
 
 ## Settings (`src/config.js`)
 
@@ -22,13 +24,13 @@ within about 10 minutes, without opening the GHL editor.
 | `offerLabel` | Small label above the price. |
 | `pixelId` | Meta Pixel ID. |
 
-## GHL loaders
+## Optional: embedding in a GHL page
 
-Each GHL funnel step holds one Code (Custom JS/HTML) element containing:
+A GHL funnel step can show a page with one Code (Custom JS/HTML) element containing:
 
 ```html
 <div id="tmw-root"></div>
-<script src="https://slavacreatives-afk.github.io/Magnetic-Wife/sales.js"></script>
+<script src="https://happyspousehappyhouse.love/sales.js"></script>
 ```
 
 Swap `sales.js` for `thank-you.js`, `privacy.js`, `terms.js` or `refunds.js` on

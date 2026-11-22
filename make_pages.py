@@ -93,9 +93,15 @@ for name, (body, after) in pages.items():
     (DOCS / f"{name}.js").write_text(bundle(name, body, after))
 
 (DOCS / ".nojekyll").write_text("")
-(DOCS / "index.html").write_text("""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex"><title>The Magnetic Wife: page preview</title></head>
-<body style="margin:0"><div id="tmw-root"></div><script src="sales.js"></script></body></html>
-""")
+
+# Full standalone site for the custom domain (GitHub Pages serves docs/).
+import shutil
+for name in ["index.html", "styles.css", "config.js", "site.js", "favicon.svg"]:
+    shutil.copy(SITE / name, DOCS / name)
+for folder in ["thank-you", "privacy", "terms", "refunds"]:
+    (DOCS / folder).mkdir(exist_ok=True)
+    shutil.copy(SITE / folder / "index.html", DOCS / folder / "index.html")
+for asset in (SRC / "assets").iterdir():
+    shutil.copy(asset, DOCS / asset.name)
+(DOCS / "CNAME").write_text("happyspousehappyhouse.love\n")
 print("docs/ ready:", ", ".join(f"{n}.js" for n in pages))
