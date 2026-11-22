@@ -1,0 +1,147 @@
+
+/* ---- Static-site additions ---- */
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFF8ED;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+.letter-page .skip-link{color:#E8B65C}
+.pull-quote .q{color:#E8B65C;font-style:normal}
+
+/* Why it's different (now outside the offer box) */
+.why-different{margin-top:8px}
+.why-different h3{margin-top:0!important}
+
+/* Offer box */
+.offer-box .letter-label{margin:0 0 6px}
+.value-list{margin:28px 0 8px;font:16px/1.4 Inter,sans-serif;color:#2E211C}
+.value-row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #E3D2BE}
+.value-row span:last-child{white-space:nowrap}
+.value-row.total{border-bottom:0;border-top:2px solid #C9B6AA;margin-top:-1px;font-weight:700}
+.offer-price{margin:28px 0 20px}
+.offer-price .offer-label{display:block;margin-bottom:6px;color:#8A5F14;font:600 13px/1.4 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+.offer-price .offer-until{margin-top:4px;color:#8A5F14;font:600 14px/1.4 Inter,sans-serif}
+.guarantee-strip{display:flex;align-items:center;gap:14px;margin:0 0 22px;padding:14px 16px;border-radius:14px;background:#FFF8ED;font-size:16px;line-height:1.5}
+.guarantee-ring{flex:0 0 auto;display:grid;place-items:center;width:46px;height:46px;border:2px solid #E8B65C;border-radius:50%;color:#8A5F14;font:700 15px/1 Inter,sans-serif}
+.checkout-wrap{border-radius:14px}
+.checkout-wrap.embedded{min-height:560px;background:#FFF8ED;overflow:hidden}
+.letter-page .letter-button{color:#FFF8ED}
+@media(max-width:420px){.letter-page .letter-button{font-size:17px;padding:14px 14px}}
+.checkout-wrap [data-whop-checkout-plan-id]{width:100%;min-height:560px}
+.checkout-fallback{padding:4px 0 0}
+.secure-note{margin:12px 0 0!important;color:#6B5A50;font:13px/1.5 Inter,sans-serif;text-align:center}
+
+/* Hardcover card (muted, below the offer box) */
+.hardcover-card{margin:36px 0 0;padding:26px 24px;border:1px solid #E3D2BE;border-radius:14px;background:#F3E6D6}
+.hardcover-card .hc-text{opacity:.7}
+.hardcover-card h3{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 10px!important;font:700 22px/1.3 'Playfair Display',Georgia,serif!important}
+.hc-pill{display:inline-block;padding:4px 10px;border:1px solid #854B59;border-radius:999px;color:#854B59;font:700 11px/1.3 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.hardcover-card p{margin:0 0 10px!important;font-size:16px!important;line-height:1.55}
+.hc-form{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.hc-form input[type=email]{flex:1 1 200px;min-height:48px;padding:10px 14px;border:1px solid #C9B6AA;border-radius:12px;background:#FFF8ED;color:#2E211C;font:16px Inter,sans-serif}
+.hc-form button{min-height:48px;padding:10px 16px;border:1px solid #854B59;border-radius:12px;background:transparent;color:#854B59;font:600 15px Inter,sans-serif;cursor:pointer}
+.hc-form .bot{position:absolute;left:-9999px}
+
+/* FAQ: always open */
+.faq-list{border-top:1px solid #E3D2BE}
+.faq-item{padding:20px 0;border-bottom:1px solid #E3D2BE}
+.faq-item h3{margin:0 0 8px!important;font:600 18px/1.4 Inter,sans-serif!important;font-style:normal!important}
+.faq-item p{margin:0!important}
+
+/* Simple pages: thank-you, legal, waitlist */
+.simple-page{min-height:100vh;background:#FFF8ED;color:#2E211C;font:18px/1.7 Lora,Georgia,serif}
+.simple-top{background:#2A1A1F;color:#F7EDE3;text-align:center;padding:18px 22px 6px}
+.simple-top a{color:#F7EDE3;text-decoration:none;font:700 20px/1.3 'Playfair Display',Georgia,serif}
+.simple-top .string-lights{max-width:640px;margin:8px auto 0;height:30px}
+.simple-main{width:min(640px,calc(100% - 44px));margin:0 auto;padding:48px 0 72px}
+.simple-main h1{margin:0 0 16px;font:700 32px/1.2 'Playfair Display',Georgia,serif}
+.simple-main h2{margin:36px 0 10px;font:700 22px/1.3 'Playfair Display',Georgia,serif}
+.simple-main p,.simple-main li{margin:0 0 14px}
+.simple-main a{color:#B4462F}
+.simple-card{margin:28px 0;padding:24px;border-radius:14px;background:#F3E6D6}
+.simple-card ol{margin:0;padding-left:22px}
+.simple-badge{display:inline-block;margin-bottom:16px;padding:6px 12px;border-radius:999px;background:#F4C5A5;font:700 12px/1.3 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.simple-meta{color:#6B5A50;font:14px/1.5 Inter,sans-serif}
+.simple-footer{padding:28px 22px 48px;background:#F3E6D6;color:#6B5A50;text-align:center;font:14px/1.6 Inter,sans-serif}
+.simple-footer a{color:#B4462F;margin:0 6px}
+@media(min-width:760px){.simple-main h1{font-size:40px}}
+
+/* Hormozi-style value stack */
+.stack-item{padding:22px 0;border-bottom:1px solid #E3D2BE}
+.stack-head{display:grid;grid-template-columns:28px 1fr;column-gap:14px;row-gap:4px;align-items:center}
+.stack-head>b{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#E88770;color:#2E211C;font:600 14px Inter,sans-serif}
+.stack-head h4{margin:0;font:700 20px/1.3 'Playfair Display',Georgia,serif}
+.stack-value{grid-column:2;justify-self:start;padding:3px 10px;border-radius:999px;background:#FFF8ED;color:#8A5F14;font:700 12px/1.4 Inter,sans-serif;letter-spacing:.04em}
+.letter-page .stack-promise{margin:12px 0 10px;font-weight:700;font-size:18px;line-height:1.5}
+.stack-incl{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:16px;line-height:1.5}
+.stack-incl li{position:relative;padding-left:24px}
+.stack-incl li:before{content:'✓';position:absolute;left:0;color:#E88770;font:700 15px Inter,sans-serif}
+.stack-total{display:flex;justify-content:space-between;align-items:baseline;margin:18px 0 0;padding:14px 0;border-top:2px solid #C9B6AA;font:700 18px Inter,sans-serif}
+.stack-total s{color:#854B59;font:700 28px 'Playfair Display',Georgia,serif;text-decoration-thickness:2px}
+.cost-compare{margin:24px 0 0;padding:18px 18px 12px;border-radius:14px;background:#2A1A1F;color:#F7EDE3}
+.letter-page .cost-title{margin:0 0 8px;color:#E8B65C;font:600 13px/1.4 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.cost-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #4F363C;font:15px/1.4 Inter,sans-serif}
+.cost-row span:last-child{text-align:right;font-weight:600}
+.letter-page .cost-foot{margin:10px 0 0;color:#C9B6AA;font:12px/1.5 Inter,sans-serif}
+.offer-price .price-lead{color:#2E211C!important;font:italic 18px/1.4 Lora,Georgia,serif!important;margin-bottom:2px}
+.offer-price strong{font-size:56px!important;color:#B4462F}
+.offer-price .per-day{margin-top:8px;color:#2E211C!important;font:600 15px/1.4 Inter,sans-serif!important}
+@media(min-width:760px){.stack-head{grid-template-columns:28px 1fr auto}.stack-value{grid-column:auto;justify-self:end}}
+
+/* Editions: hardcover (out of stock) + digital in one block */
+.editions{margin:24px 0 0}
+.letter-page .editions-title{color:#8A5F14}
+.edition{padding:18px;border-radius:14px}
+.edition+.edition{margin-top:12px}
+.edition-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
+.edition h4{margin:0;font:700 19px/1.3 'Playfair Display',Georgia,serif}
+.letter-page .edition-desc{margin:8px 0 0;font-size:16px;line-height:1.5}
+.letter-page .edition-price{margin:6px 0 0;font:600 15px/1.4 Inter,sans-serif}
+.edition-hc{border:1px dashed #C9B6AA;background:#EFE4D8;color:#6B5A50}
+.edition-hc h4,.edition-hc .edition-price{text-decoration:line-through;text-decoration-color:#B4A193;text-decoration-thickness:1px}
+.edition-hc .hc-form{margin-top:12px}
+.edition-hc .hc-form input[type=email]{min-height:44px;font-size:15px}
+.edition-hc .hc-form button{min-height:44px;font-size:14px}
+.edition-digital{border:2px solid #B4462F;background:#FFF8ED;color:#2E211C;box-shadow:0 6px 18px rgba(180,70,47,.12)}
+.now-pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#B4462F;color:#FFF8ED;font:700 11px/1.3 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.edition-hc .hc-form input[type=email]{min-width:0;width:100%;flex:1 1 100%}
+
+/* Hardcover inside the e-book item */
+.hc-sub{margin:16px 0 0;padding:14px 16px;border:1px dashed #C9B6AA;border-radius:14px;background:#EFE4D8;color:#6B5A50}
+.hc-sub-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.hc-sub-name{font:700 17px/1.3 'Playfair Display',Georgia,serif;text-decoration:line-through;text-decoration-color:#B4A193}
+.hc-sub-value{color:#8A5F14;font:700 12px/1.4 Inter,sans-serif;text-decoration:line-through}
+.letter-page .hc-sub-desc{margin:6px 0 0;font-size:15px;line-height:1.5}
+.hc-sub .hc-form{margin-top:10px}
+.hc-sub .hc-form input[type=email]{min-height:44px;font-size:15px;min-width:0;width:100%;flex:1 1 100%}
+.hc-sub .hc-form button{min-height:44px;font-size:14px}
+
+/* Uniform hardcover row: no strike-through, same pills as the stack */
+.hc-sub{border:1px solid #E3D2BE!important;background:#FFF8ED!important;color:#2E211C!important}
+.hc-sub-top{justify-content:space-between}
+.hc-sub-name{font:700 18px/1.3 'Playfair Display',Georgia,serif!important;text-decoration:none!important}
+.hc-sub-tags{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.hc-sub .stack-value{background:#F3E6D6}
+.hc-sub .hc-pill{padding:3px 10px;font-size:12px;letter-spacing:.04em}
+.letter-page .hc-sub-desc{color:#6B5A50}
+.stack-total .total-num{color:#2E211C;font:700 28px 'Playfair Display',Georgia,serif}
+
+/* Hardcover as its own stack item, same layout as the e-book */
+.stack-tags{display:flex;flex-wrap:wrap;gap:8px;align-items:center;grid-column:2;justify-self:start}
+.stack-tags .stack-value{grid-column:auto}
+.stack-tags .hc-pill{padding:3px 10px;font-size:12px;letter-spacing:.04em}
+@media(min-width:760px){.stack-tags{grid-column:auto;justify-self:end}}
+
+/* Book format: either e-book or hardcover */
+.formats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 0}
+.format{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:14px;border-radius:14px;background:#FFF8ED}
+.format-name{font:700 18px/1.2 'Playfair Display',Georgia,serif;color:#2E211C}
+.format .stack-value{background:#F3E6D6}
+.format-on{border:2px solid #B4462F}
+.format-off{border:1px solid #E3D2BE;opacity:.75}
+.format .now-pill,.format .hc-pill{padding:3px 10px;font-size:11px;letter-spacing:.06em}
+.format .hc-pill,.format .now-pill{white-space:nowrap}
+
+.bundles{margin:24px 0 0}
+.letter-page .bundles-title{margin:0 0 10px;color:#8A5F14;font:600 13px/1.4 Inter,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.format-desc{font:14px/1.45 Inter,sans-serif;color:#6B5A50}
+.format-price{font:700 30px/1 'Playfair Display',Georgia,serif;color:#2E211C}
+.format-on .format-price{color:#B4462F}
