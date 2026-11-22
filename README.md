@@ -40,3 +40,7 @@ the other steps.
 python3 make_pages.py
 git add -A && git commit -m "Update page" && git push
 ```
+
+## Copyright
+
+All rights reserved. See `LICENSE`: nothing here may be copied or reused without written permission.
