@@ -91,20 +91,9 @@ PURCHASE_JS = """<script>
 
 THANKS = f"""
 <span class="simple-badge">Payment complete</span>
-<h1>Welcome. Your Magnetic Wife bundle is on its way.</h1>
-<p>Your purchase is confirmed. Everything is sent to the email address you used at checkout.</p>
-<div class="simple-card">
-<h2 style="margin-top:0">What happens next</h2>
-<ol>
-<li><strong>Check your inbox.</strong> Look for the email from Whop with your access to the e-book, the 4-Week Playbook and the private community.</li>
-<li><strong>Give it up to 15 minutes.</strong> You don't need to buy again.</li>
-<li><strong>Check spam and promotions</strong> if it isn't in your main inbox.</li>
-</ol>
-</div>
-<p>Start with Part One of the e-book tonight. Then open Week 1 of the Playbook tomorrow morning. A few minutes is all it takes.</p>
-<h2>Still nothing after 15 minutes?</h2>
-<p>Email <a href="mailto:{EMAIL}">{EMAIL}</a> with the email address you used at checkout, and we'll sort it out.</p>
-<p class="simple-meta">Your 30-day guarantee starts today. If it isn't worth it, email us for a full refund. No form, no explanation.</p>
+<h1>You're in. Check your email.</h1>
+<p>Your Magnetic Wife bundle is on its way to the email address you used at checkout: the e-book, the 4-Week Playbook and your invitation to the private community.</p>
+<p class="simple-meta">It can take up to 15 minutes. If you don't see it, check your spam and promotions folders. Still nothing? Email <a href="mailto:{EMAIL}">{EMAIL}</a> and we'll sort it out.</p>
 """
 
 WAITLIST = """
