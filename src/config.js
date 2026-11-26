@@ -24,5 +24,5 @@ window.TMW = {
   offerUntil: "",
 
   /* Meta Pixel */
-  pixelId: "1111194736775645"
+  pixelId: "2606152179826950"
 };
