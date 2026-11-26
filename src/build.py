@@ -91,9 +91,15 @@ PURCHASE_JS = """<script>
 
 THANKS = f"""
 <span class="simple-badge">Payment complete</span>
-<h1>You're in. Check your email.</h1>
-<p>Your Magnetic Wife bundle is on its way to the email address you used at checkout: the e-book, the 4-Week Playbook and your invitation to the private community.</p>
-<p class="simple-meta">It can take up to 15 minutes. If you don't see it, check your spam and promotions folders. Still nothing? Email <a href="mailto:{EMAIL}">{EMAIL}</a> and we'll sort it out.</p>
+<h1>You're in. Your resources are ready.</h1>
+<p>Sign in to <a href="https://whop.com/hub/">Whop</a> and open <strong>The Magnetic Wife</strong> to access your two resources:</p>
+<ul>
+<li>The Magnetic Wife e-book</li>
+<li>The 4-Week Magnetic Wife Playbook</li>
+</ul>
+<p>Your files are available immediately inside the product's <strong>Files</strong> area.</p>
+<p class="simple-meta">Your private community invitation will be sent separately. If you don't receive it, email <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+<p><a class="letter-button" href="https://whop.com/hub/" style="color:#FFF8ED;box-sizing:border-box;max-width:100%">Open Whop →</a></p>
 """
 
 WAITLIST = """
