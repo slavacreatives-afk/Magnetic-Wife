@@ -59,6 +59,7 @@ if (!window.fbq && C.pixelId) {
   var recent = started && (Date.now() - started) < 2 * 60 * 60 * 1000;
   if (done || !(confirmed || recent) || typeof fbq !== "function") return;
   fbq("track", "Purchase", { content_name: "The Magnetic Wife", content_ids: "the-magnetic-wife", content_type: "product", value: C.value || 55, currency: "USD", num_items: 1 });
+  if (window.posthog && window.posthog.capture) posthog.capture("Purchase", { value: C.value || 55, currency: "USD" });
   try { sessionStorage.setItem("tmw:purchase", "1"); localStorage.removeItem("tmw:checkout-started"); } catch (e) {}
 })();
 })();

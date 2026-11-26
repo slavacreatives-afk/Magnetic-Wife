@@ -5,6 +5,7 @@
 
   function track(name, params) {
     if (typeof window.fbq === "function") window.fbq("track", name, params || {});
+    if (window.posthog && window.posthog.capture) window.posthog.capture(name, params || {});
   }
   function productParams() {
     return { content_name: "The Magnetic Wife", content_ids: "the-magnetic-wife", content_type: "product", value: C.value || 55, currency: "USD", num_items: 1 };
