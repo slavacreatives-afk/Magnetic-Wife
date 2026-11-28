@@ -192,3 +192,16 @@ img{max-width:100%}
 .letter-page .tried-list{margin:4px 0 20px;padding-left:18px;border-left:2px solid #E8B65C}
 .letter-page .tried-list p{margin:0 0 12px}
 .letter-page .tried-list p:last-child{margin-bottom:0}
+
+/* Nov 28: close the big gaps */
+.letter-page .letter-hero{min-height:0;padding:40px 0 8px}
+.letter-page .letter-hero-inner{padding-top:12px}
+.letter-page .skip-link{margin-top:16px}
+.letter-page .letter-hero + main > .letter-section:first-child{padding-top:24px}
+.letter-page .letter-night.letter-section + .letter-night.letter-section,
+.letter-page .letter-morning.letter-section + .letter-morning.letter-section{padding-top:8px}
+.letter-page .night-spacer{height:64px}
+@media(min-width:760px){.letter-page .letter-hero{padding:56px 0 8px}.letter-page .letter-section{padding:56px 0}.letter-page .letter-hero + main > .letter-section:first-child{padding-top:32px}.letter-page .letter-night.letter-section + .letter-night.letter-section,.letter-page .letter-morning.letter-section + .letter-morning.letter-section{padding-top:8px}}
+.letter-page main > .letter-section{padding-bottom:28px}
+@media(min-width:760px){.letter-page main > .letter-section{padding-bottom:36px}}
+.letter-page main > .letter-section#offer{padding-bottom:48px}
