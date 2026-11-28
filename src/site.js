@@ -80,4 +80,19 @@
     });
     io.observe(story);
   }
+  // PostHog only: she actually reached the offer section
+  var offer = document.getElementById("offer");
+  if (offer && "IntersectionObserver" in window) {
+    var reached = false;
+    var io2 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!reached && en.isIntersecting) {
+          reached = true;
+          if (window.posthog && window.posthog.capture) window.posthog.capture("ReachedOffer");
+          io2.disconnect();
+        }
+      });
+    });
+    io2.observe(offer);
+  }
 })();

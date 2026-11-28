@@ -11,7 +11,7 @@ window.TMW = {
   /* Your Whop Plan ID for the $55 plan, e.g. "plan_AbC123xyz".
      Whop dashboard > Checkout Links > ... (three dots) > Details.
      When this is filled in, the Whop checkout appears on the page. */
-  planId: "",
+  planId: "plan_YVuQRgCviQJLl",
 
   /* Backup: a normal Whop checkout link. Used only if planId is empty. */
   checkoutUrl: "https://whop.com/happyspousehappyhouse/the-magnetic-wife",
@@ -131,6 +131,21 @@ if (!window.fbq && C.pixelId) {
       });
     });
     io.observe(story);
+  }
+  // PostHog only: she actually reached the offer section
+  var offer = document.getElementById("offer");
+  if (offer && "IntersectionObserver" in window) {
+    var reached = false;
+    var io2 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!reached && en.isIntersecting) {
+          reached = true;
+          if (window.posthog && window.posthog.capture) window.posthog.capture("ReachedOffer");
+          io2.disconnect();
+        }
+      });
+    });
+    io2.observe(offer);
   }
 })();
 
