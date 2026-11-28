@@ -7,7 +7,7 @@ window.TMW = {
   /* Your Whop Plan ID for the $55 plan, e.g. "plan_AbC123xyz".
      Whop dashboard > Checkout Links > ... (three dots) > Details.
      When this is filled in, the Whop checkout appears on the page. */
-  planId: "plan_YVuQRgCviQJLl",
+  planId: "",
 
   /* Backup: a normal Whop checkout link. Used only if planId is empty. */
   checkoutUrl: "https://whop.com/happyspousehappyhouse/the-magnetic-wife",
