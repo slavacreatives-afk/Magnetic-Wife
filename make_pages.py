@@ -103,5 +103,14 @@ for folder in ["thank-you", "privacy", "terms", "refunds"]:
     shutil.copy(SITE / folder / "index.html", DOCS / folder / "index.html")
 for asset in (SRC / "assets").iterdir():
     shutil.copy(asset, DOCS / asset.name)
+
+# Cache-busting: add a content hash to the CSS/JS links so browsers load new versions right away.
+import hashlib
+_ver = {n: hashlib.md5((DOCS / n).read_bytes()).hexdigest()[:8] for n in ["styles.css", "config.js", "site.js"]}
+for html_path in [DOCS / "index.html"] + [DOCS / f / "index.html" for f in ["thank-you", "privacy", "terms", "refunds"]]:
+    h = html_path.read_text()
+    for n, v in _ver.items():
+        h = h.replace(f'"/{n}"', f'"/{n}?v={v}"')
+    html_path.write_text(h)
 (DOCS / "CNAME").write_text("happyspousehappyhouse.love\n")
 print("docs/ ready:", ", ".join(f"{n}.js" for n in pages))
