@@ -205,3 +205,4 @@ img{max-width:100%}
 .letter-page main > .letter-section{padding-bottom:28px}
 @media(min-width:760px){.letter-page main > .letter-section{padding-bottom:36px}}
 .letter-page main > .letter-section#offer{padding-bottom:48px}
+.letter-page .composite-note{max-width:440px;margin:0 auto;padding:0;border:0;color:#9C8A80;font:12px/1.45 Inter,sans-serif;text-align:center}
