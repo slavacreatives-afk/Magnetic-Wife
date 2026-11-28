@@ -10,7 +10,7 @@ window.TMW = {
   planId: "",
 
   /* Backup: a normal Whop checkout link. Used only if planId is empty. */
-  checkoutUrl: "https://whop.com/happyspousehappyhouse/the-magnetic-wife",
+  checkoutUrl: "https://whop.com/checkout/plan_YVuQRgCviQJLl/",
 
   /* Where Whop sends her after paying. */
   returnUrl: "https://happyspousehappyhouse.love/thank-you/?payment=success",
