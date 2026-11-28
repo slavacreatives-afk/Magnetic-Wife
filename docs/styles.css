@@ -167,3 +167,39 @@ img{max-width:100%}
 .offer-price .one-time-badge{white-space:nowrap;font-size:12px!important;letter-spacing:.06em;padding:7px 12px}
 .total-wrap{display:flex;flex-direction:column;align-items:flex-end;line-height:1.1}
 .total-then{margin-top:4px;color:#6B5A50;font:600 14px/1.3 Inter,sans-serif}
+
+/* Nov 28: tighter story spacing */
+.letter-page .letter-section{padding:44px 0}
+.letter-page .letter-section p{margin:0 0 16px}
+.letter-page .letter-section h2{margin-bottom:20px}
+.letter-page .letter-section h3{margin:32px 0 12px}
+.letter-page .pull-quote{margin:30px auto}
+.letter-page .turning-point{margin:24px 0}
+.letter-page .switch-off{margin:12px 0 20px}
+@media(min-width:760px){.letter-page .letter-section{padding:68px 0}.letter-page .letter-section p{margin-bottom:18px}}
+
+/* In-story buttons */
+.story-cta{margin:28px 0 4px}
+.letter-page .letter-button-soft{background:transparent;color:#B4462F;border:2px solid #B4462F}
+.letter-page .letter-button-soft:hover{background:#B4462F;color:#FFF8ED}
+
+/* Offer additions */
+.offer-promise{margin:0 0 10px;text-align:center;color:#B4462F;font:italic 700 24px/1.3 'Playfair Display',Georgia,serif}
+@media(min-width:760px){.offer-promise{font-size:30px}}
+.mini-faq{margin:28px 0 8px;padding:20px;border-radius:14px;background:#FFF8ED;border:1px solid #E3D2BE}
+.mini-faq .letter-label{margin:0 0 12px}
+.mini-faq-item{padding:10px 0;border-top:1px solid #E3D2BE}
+.mini-faq-item:first-of-type{border-top:0;padding-top:0}
+.mini-faq-item h4{margin:0 0 2px;font:700 16px/1.35 Inter,sans-serif;color:#2E211C}
+.letter-page .mini-faq-item p{margin:0;font-size:16px;line-height:1.5;color:#6B5A50}
+.letter-page .hardcover-line{margin:14px 0 0;text-align:center;color:#6B5A50;font:13px/1.45 Inter,sans-serif}
+.letter-page .faq-note{margin-top:20px;color:#6B5A50;font-size:16px;line-height:1.6}
+
+/* Sticky mobile buy bar */
+.mw-sticky{transform:translateY(110%);transition:transform .25s ease;pointer-events:none}
+.mw-sticky.show{transform:none;pointer-events:auto}
+.mw-sticky-text{font:13px/1.35 Inter,sans-serif;color:#6B5A50}
+.mw-sticky-text strong{color:#2E211C;font-size:15px}
+@media(min-width:760px){.mw-sticky{display:none}}
+@media(prefers-reduced-motion:reduce){.mw-sticky{transition:none}}
+@media(max-width:759px){.letter-page .letter-sticky.mw-sticky{display:flex!important}}

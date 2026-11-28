@@ -96,3 +96,27 @@
     io2.observe(offer);
   }
 })();
+
+// Sticky buy bar on phones: show after the hero, hide while a buy button or the checkout is on screen
+(function () {
+  var bar = document.getElementById("sticky-buy");
+  var hero = document.getElementById("top");
+  if (!bar || !hero || !("IntersectionObserver" in window)) return;
+  var pastHero = false, buyVisible = 0;
+  function update() {
+    var on = pastHero && buyVisible === 0;
+    bar.classList.toggle("show", on);
+    bar.setAttribute("aria-hidden", on ? "false" : "true");
+    var a = bar.querySelector("a"); if (a) a.tabIndex = on ? 0 : -1;
+  }
+  new IntersectionObserver(function (es) {
+    es.forEach(function (e) { pastHero = !e.isIntersecting && e.boundingClientRect.top < 0; });
+    update();
+  }).observe(hero);
+  var seen = new Set();
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
+    buyVisible = seen.size; update();
+  });
+  document.querySelectorAll("#checkout, .buy-block, .story-cta").forEach(function (el) { io.observe(el); });
+})();
